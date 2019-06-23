@@ -234,7 +234,7 @@ body {
     width: 100%;
   }
   #cheers{font-size: 40px}
-  #navbar{font-size: 15px;}
+  #navbar a{font-size: 15px;}
 }
 
   
