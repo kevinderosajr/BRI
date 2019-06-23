@@ -50,6 +50,16 @@ font-family: 'Fredericka the Great', cursive; */
     /* color: #05386B; */
     color: black;
   }
+
+  #menu:hover{
+      font-size: 50px;
+  }
+
+  #story:hover{
+    font-size: 50px;
+}
+
+
   #menuNavbar a:hover {
     background-color: #ddd;
     /* color: #05386B; */
@@ -67,6 +77,11 @@ font-family: 'Fredericka the Great', cursive; */
 
   .headerImage {
     text-align: center;
+}
+
+#headerBackground{
+    z-index: 2;
+  
 }
 
 
@@ -116,9 +131,9 @@ body {
 #buildIt{
   /* color: #25274D; */
   color: white;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
-    font-family: 'Bungee', cursive;
+    font-family: 'Fredericka the Great', cursive;
     font-weight: lighter;
 }
 #stay{
@@ -126,7 +141,7 @@ body {
   color: white;
     font-size: 40px;
     text-align: center;
-    font-family: 'Bungee', cursive;
+    font-family: 'Fredericka the Great', cursive;
     font-weight: lighter;
 }
 
@@ -134,7 +149,7 @@ body {
   color: white;
     font-size: 20px;
     text-align: center;
-    font-family: 'Bungee', cursive;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: lighter;
 }
 
@@ -143,7 +158,7 @@ body {
   color: white;
     font-size: 30px;
     text-align: center;
-    font-family: 'Bungee', cursive;
+    font-family: 'Fredericka the Great', cursive;
     font-weight: lighter;
 }
 
@@ -153,10 +168,10 @@ body {
 
 #holyCow{
   color: white;
-  font-size: 70px;
+  font-size: 50px;
   text-align: center;
   /* font-family: 'Lobster', cursive; */
-  font-family: 'Bungee', cursive;
+  font-family: 'Fredericka the Great', cursive;
   font-weight: lighter;
 
 }
@@ -165,14 +180,14 @@ body {
   color: white;
     font-size: 20px;
     text-align: center;
-    font-family: 'Bungee', cursive;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: lighter;
 }
 #dealsBlurb{
   color: white;
     font-size: 20px;
     text-align: center;
-    font-family: 'Bungee', cursive;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: lighter;
 }
 
@@ -181,7 +196,7 @@ body {
   color: white;
     font-size: 30px;
     text-align: center;
-    font-family: 'Bungee', cursive;
+    font-family: 'Fredericka the Great', cursive;
     font-weight: lighter;
 }
 
