@@ -117,8 +117,9 @@ body {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     padding: 0px 0px 0px 0px;
-
 }
+
+
 #history{
   color: white;
     font-size: 20px;
@@ -128,11 +129,11 @@ body {
 
 }
 
-#buildIt{
-  /* color: #25274D; */
-  color: white;
-    font-size: 50px;
+#about{
+    color: #39f733;
+    font-size: 40px;
     text-align: center;
+    /* font-family: 'Lobster', cursive; */
     font-family: 'Fredericka the Great', cursive;
     font-weight: lighter;
 }
@@ -237,6 +238,23 @@ body {
   #bri {display: none}
 }
 
+/* //Trial */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .item {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+  }
+/* //Trial */
   
   .content {
     padding: 16px;

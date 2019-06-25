@@ -18,6 +18,10 @@ function myFunction() {
   
 }
 
+AOS.init({
+    duration: 1200,
+  })
+
 //Menu Navbar Code
 
 // window.onscroll = function() {myFunction()};
