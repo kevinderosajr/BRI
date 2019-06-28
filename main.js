@@ -4,7 +4,7 @@ window.onscroll = function() {myFunction()};
 
 let navbar = document.getElementById("navbar");
 let sticky = navbar.offsetTop;
-console.log(sticky)
+
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
@@ -22,22 +22,40 @@ AOS.init({
     duration: 1200,
   })
 
-//Menu Navbar Code
 
-// window.onscroll = function() {myFunction()};
+  const firebaseConfig = {
+    apiKey: "AIzaSyCF5khD8A_rM9hYhdhUdcRP0F9L8nPkmv8",
+    authDomain: "briemail-48eb7.firebaseapp.com",
+    databaseURL: "https://briemail-48eb7.firebaseio.com",
+    projectId: "briemail-48eb7",
+    storageBucket: "",
+    messagingSenderId: "942795508931",
+    appId: "1:942795508931:web:a470fa94b097b80c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
-// let navbar = document.getElementById("menuNavbar");
-// let sticky = navbar.offsetTop;
-// console.log(sticky)
+  const database = firebase.database()
 
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky");
-  
+  $("#addEmail").on("click", function(event){
+    event.preventDefault();
+
+    let custName = $("#name").val().trim()
+    let custEmail = $("#email").val().trim()
     
-//   } else {
-//     navbar.classList.remove("sticky");
- 
-//   }
+    
+    console.log(custName)
+    console.log(custEmail)
+
+
+    let newEmail = {
+        Name:custName,
+        Email:custEmail,    
+    }
   
-// }
+database.ref().push(newEmail)
+
+$("#name").val("")
+$("#email").val("")
+
+})

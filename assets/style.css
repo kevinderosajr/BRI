@@ -22,7 +22,7 @@ font-family: 'Fredericka the Great', cursive; */
   #navbar a {
     float: left;
     display: block;
-    color: white;
+    color: #39f733;
     /* color: #39f733; */
     text-align: center;
     padding: 14px 16px;
@@ -46,7 +46,7 @@ font-family: 'Fredericka the Great', cursive; */
   }
   
   #navbar a:hover {
-    background-color: #ddd;
+    background-color: #39f733;
     /* color: #05386B; */
     color: black;
   }
@@ -103,7 +103,7 @@ body {
   
   #cheers{
     color: #39f733;
-    font-size: 60px;
+    font-size: 65px;
     text-align: center;
     /* font-family: 'Lobster', cursive; */
     font-family: 'Fredericka the Great', cursive;
@@ -128,6 +128,55 @@ body {
     padding: 0px 0px 0px 0px;
 
 }
+#menuContainer{
+position: relative;
+  text-align: center;
+  
+}
+
+#aboutContainer{
+    position: relative;
+      text-align: center;
+      
+    }
+
+#menuLabel{
+position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 50px;
+  color: white;
+}
+
+#menuLabel:hover{
+    top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 70px;
+  color: #39f733;
+}
+
+#aboutLabel{
+    position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Fredericka the Great', cursive;
+      font-size: 50px;
+      color: white;
+    }
+    
+    #aboutLabel:hover{
+        top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Fredericka the Great', cursive;
+      font-size: 70px;
+      color: #39f733;
+    }
 
 #about{
     color: #39f733;

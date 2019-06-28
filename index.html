@@ -10,11 +10,13 @@
     <link
         href="https://fonts.googleapis.com/css?family=Cuprum|Fredericka+the+Great|Major+Mono+Display|Spinnaker|Bungee|Bungee+Shade|Gravitas+One|Lobster|Ubuntu|Sunflower:300&display=swap"
         rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase.js"></script>
 
 
     <style>
         img {
-            width: 80%;
+            width: 70%;
             height: auto;
         }
     </style>
@@ -66,9 +68,9 @@
                     </div>
                 </div>
 
+                <div style="height:2px; background-color:white"></div>
+                <br>
             </div>
-
-            <br>
             <div class="container">
                 <div class="row">
                     <div class="col-md-1"></div>
@@ -80,39 +82,71 @@
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container" id="menuContainer">
                 <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-7">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
                         <div class="beerListImage" style="align-content:center" data-aos="slide-up">
                             <img src="assets/images/cheers.jpg" alt="">
+                            <p id="menuLabel">BEER LIST</p>
                         </div>
                     </div>
-                    <div class="col-md-2"></div>
+                    <div class="col-md-1"></div>
                 </div>
             </div>
 
             <div class="container">
                 <div class="row">
+                    <div class="col-md-2"></div>
+
+                    <div class="col-md-8">
+                        <p id="blurb">Check out our beer list for an incredible variety of unique beers. Whether it's
+                            our favorite 480G West Coast IPA or our Peach Lolli made with fresh, locally grown peaches,
+                            we've got something for everyone.</p>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+
+                <div style="height:2px; background-color:white"></div>
+                <br>
+                <div class="row">
                     <div class="col-md-1"></div>
 
-                    <div class="col-md-10">
-                        <p id="blurb">Okay...maybe that's from a pretty great movie, but it's also what inspired us to
-                            open
-                            up
-                            shop and
-                            create our own field of dreams.</p>
+                    <div class="col-md-10"> <a href="about.html">
+                            <h3 id="about">It all started with two guys in a garage...</h3>
+                        </a>
                     </div>
                     <div class="col-md-1"></div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4"></div>
+                <div class="container" id="aboutContainer">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                            <p id="blurb">beer /bir/
+                                noun: beer; plural noun: beers
+                                an alcoholic drink made from yeast-fermented malt flavored with hops.
+                                "a pint of beer"</p>
+                            <p id="blurb"> That may be the definition, but it means so much more to us. Check out our
+                                story to find out why.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ownerImage" style="align-content:center">
+                                <img src="assets/images/ownersCheers.jpeg" alt="">
 
-                    <div class="col-md-4"> <a href="about.html">
-                            <p id="story" style="color:#39f733">OUR STORY</p>
-                        </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
                     </div>
-                    <div class="col-md-4"></div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <p id="aboutLabel">OUR STORY</p>
+                        </div>
+                        <div class="col-md-4"></div>
+
+                    </div>
                 </div>
 
             </div>
@@ -204,11 +238,11 @@
                     <div class="row">
                         <div class="col-md-4"></div>
                         <div class="col-md-4">
-                            <input type="text" name="nameBox" placeholder="Name">
-                            <input type="text" name="emailBox" placeholder="Email Address">
+                            <input type="text" name="nameBox" placeholder="Name" id="name">
+                            <input type="text" name="emailBox" placeholder="Email Address" id="email">
                             <div class="row" style="padding: 4px">
                                 <div class="col-md-2"></div>
-                                <div class="col-md-8"><button style="color: black">GET DEALS!!!</button></div>
+                                <div class="col-md-8"><button style="color: black" id="addEmail">GET DEALS!!!</button></div>
                                 <div class="col-md-2"></div>
                             </div>
                         </div>
@@ -218,9 +252,6 @@
             </div>
         </div>
     </div>
-
-    <div class="item" data-aos="slide-up">7</div>
-
     <script src="main.js"></script>
 
 
