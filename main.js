@@ -40,12 +40,12 @@ AOS.init({
   $("#addEmail").on("click", function(event){
     event.preventDefault();
 
-    let custName = $("#name").val().trim()
-    let custEmail = $("#email").val().trim()
+    let custName = $("#name").val().trim();
+    let custEmail = $("#email").val().trim();
     
     
-    console.log(custName)
-    console.log(custEmail)
+    console.log(custName);
+    console.log(custEmail);
 
 
     let newEmail = {
@@ -53,9 +53,10 @@ AOS.init({
         Email:custEmail,    
     }
   
-database.ref().push(newEmail)
+database.ref().push(newEmail);
 
-$("#name").val("")
-$("#email").val("")
+$("#name").val("Thanks for signing up!");
+$("#email").val(" ");
 
 })
+

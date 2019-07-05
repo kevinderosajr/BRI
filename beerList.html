@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Cuprum|Fredericka+the+Great|Major+Mono+Display|Spinnaker|Bungee|Bungee+Shade|Gravitas+One|Lobster|Ubuntu|Sunflower:300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase.js"></script>
+    <title>BRI - Our Story</title>
+</head>
+
+<body>
+
+    <div class="nav-wrapper">
+        <div id="navbar">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="beerList.html">Beer List</a>
+            <a href="about.html">About</a>
+            <a href="" style="float:right; font-family: 'Fredericka the Great', cursive;" id="bri">The Beer Research
+                Institute</a>
+        </div>
+    </div>
+
+    <div class="container" style="background-color:black; color:white; font-family: 'Ubuntu', sans-serif;">
+        <div class="row" style="padding:10px" id="menuImage" data-aos="zoom-in">
+            <div class="col-md-2"></div>
+            <div class="col-md-8"><img src="assets/images/briLogo.png" alt=""></div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row" style="padding:10px" id="menuImage">
+                <div class="col-md-2"></div>
+                <div class="col-md-8" style="font-family: 'Fredericka the Great', cursive; color:#39f733; font-size: 30px"><p>Be sure to check back often as our list is updated multiple times a week!</p></div>
+                <div class="col-md-2"></div>
+            </div>
+
+        <div class="row" style="padding:0px 0px 0px 20px">
+            <p style="font-weight:bold; font-family: 'Fredericka the Great', cursive; color:#39f733; font-size: 25px">1.
+                480G IPA</p>
+        </div>
+        <div class="row" style="padding:0px 0px 0px 20px">
+            IPA American
+            <br>
+            8% ABV 71 IBU The Beer Research Institute Mesa, AZ
+            <br>
+            West Coast IPA dry hopped with Simcoe and Amarillo
+            <br>
+            4oz Draft - $2.00
+            <br>
+            16oz Draft - $6.00
+            <br>
+            4 Pack To Go - $15.00
+        </div>
+        <br>
+
+
+        <div class="row" style="padding:0px 0px 0px 20px">
+            <p style="font-weight:bold; font-family: 'Fredericka the Great', cursive; color:#39f733; font-size: 25px">
+                2.War Paint IPA</p>
+        </div>
+        <div class="row" style="padding:0px 0px 0px 20px">
+            Red
+            <br>
+            7.3% ABV 60 IBU The Beer Research Institute Mesa, AZ
+            <br>
+            West Coast Hoppy Red
+            <br>
+            4oz Draft - $2.00
+            <br>
+            16oz Draft - $6.00
+            <br>
+            32oz Crwl - $10.00
+            <br>
+            64oz Grwl - $18.00
+        </div>
+        <br>
+
+
+        <div class="row" style="padding:0px 0px 0px 20px">
+            <p style="font-weight:bold; font-family: 'Fredericka the Great', cursive; color:#39f733; font-size: 25px">
+                3. Cash Moves</p>
+        </div>
+        <div class="row" style="padding:0px 0px 0px 20px">
+            Cream Ale
+            <br>
+            5.3% ABV 14 IBU The Beer Research Institute Mesa, AZ
+            <br>
+            American Cream Ale with tart cherries and vanilla.
+            <br>
+            4oz Draft - $2.00
+            <br>
+            16oz Draft - $6.00
+            <br>
+            32oz Crwl - $10.00
+            <br>
+            64oz Grwl - $18.00
+        </div>
+        <br>
+
+        <div class="row" style="padding:0px 0px 0px 20px">
+            <p style="font-weight:bold; font-family: 'Fredericka the Great', cursive; color:#39f733; font-size: 25px">
+                4. Urban Art IPA</p>
+        </div>
+        <div class="row" style="padding:0px 0px 0px 20px">
+            New England
+            <br>
+            6.5% ABV 50 IBU The Beer Research Institute Mesa, AZ
+            <br>
+            New England style IPA brewed with lactose, fermented with London Fog yeast and dry hopped with Citra and
+            Denali.
+            <br>
+            4oz Draft - $2.00
+            <br>
+            16oz Draft - $6.00
+            <br>
+            4 Pack To Go - $15.00
+        </div>
+        <br>
+
+
+        <div class="row" style="padding:0px 0px 0px 20px">
+            <p style="font-weight:bold; font-family: 'Fredericka the Great', cursive; color:#39f733; font-size: 25px">
+                5. B-Theory</p>
+        </div>
+        <div class="row" style="padding:0px 0px 0px 20px">
+            Belgian Tripel
+            <br>
+            11% ABV 34 IBU The Beer Research Institute Mesa, AZ
+            <br>
+            Our Belgian Tripel aged in 4 Roses Barrels. B-Theory of time states that time doesnt exist in a tense
+            fashion. When we put beer into a barrel, we have to suspend the construct of time.
+            <br>
+            8oz Draft - $7.00
+        </div>
+        <br>
+
+        <div class="row" style="padding:0px 0px 0px 20px">
+            <p style="font-weight:bold; font-family: 'Fredericka the Great', cursive; color:#39f733; font-size: 25px">
+                6. Vamonos Lager</p>
+        </div>
+        <div class="row" style="padding:0px 0px 0px 20px">
+            Vienna
+            <br>
+            4.5% ABV 15 IBU The Beer Research Institute Mesa, AZ
+            <br>
+            Mexican Lager brewed with Lemon Drop hops and Fresh Lime Zest!
+            <br>
+            4oz Draft - $2.00
+            <br>
+            16oz Draft - $6.00
+            <br>
+            32oz Crwl - $10.00
+            <br>
+            64oz Grwl - $18.00
+        </div>
+        <br>
+
+        <div class="row" style="padding:0px 0px 0px 20px">
+            <p style="font-weight:bold; font-family: 'Fredericka the Great', cursive; color:#39f733; font-size: 25px">
+                7. Top Secret Battle Monkey</p>
+        </div>
+        <div class="row" style="padding:0px 0px 0px 20px">
+            IPA - Imperial / Double
+            <br>
+            10% ABV 100 IBU The Beer Research Institute Mesa, AZ
+            <br>
+            Double IPA dry hopped with Citra and Denali Hops.
+            <br>
+            4oz Draft - $2.50
+            <br>
+            16oz Draft - $6.50
+            <br>
+            32oz Crwl - $15.00
+            <br>
+            64oz Grwl - $24.00
+        </div>
+        <br>
+
+        <div class="row" style="padding:0px 0px 0px 20px">
+            <p style="font-weight:bold; font-family: 'Fredericka the Great', cursive; color:#39f733; font-size: 25px">
+                8. Fist Full of Pils</p>
+        </div>
+        <div class="row" style="padding:0px 0px 0px 20px">
+            Pilsner - Other
+            <br>
+            5.4% ABV 58 IBU The Beer Research Institute Mesa, AZ
+            <br>
+            American Pilsner with cascade and simcoe hops.
+            <br>
+            4oz Draft - $2.00
+            <br>
+            16oz Draft - $6.00
+            <br>
+            32oz Crwl - $10.00
+            <br>
+            64oz Grwl - $18.00
+        </div>
+        <br>
+
+        <div class="row" style="padding:0px 0px 0px 20px">
+            <p style="font-weight:bold; font-family: 'Fredericka the Great', cursive; color:#39f733; font-size: 25px">
+                9. Honey Nut Hoppy-Os</p>
+        </div>
+        <div class="row" style="padding:0px 0px 0px 20px">
+            IPA - New England
+            <br>
+            6.5% ABV 55 IBU The Beer Research Institute Mesa, AZ
+            <br>
+            NE style IPA made with Honey Nut Cheerios,Honey, Lactose, Vanilla, Loral and Citra hops!
+            <br>
+            4oz Draft - $2.00
+            <br>
+            16oz Draft - $6.00
+            <br>
+            32oz Crwl - $10.00
+            <br>
+            64oz Grwl - $18.00
+        </div>
+        <br>
+
+        <div class="row" style="padding:0px 0px 0px 20px">
+            <p style="font-weight:bold; font-family: 'Fredericka the Great', cursive; color:#39f733; font-size: 25px">
+                10. Turn Farmhouse Ale</p>
+        </div>
+        <div class="row" style="padding:0px 0px 0px 20px">
+            Saison
+            <br>
+            4.5% ABV 25 IBU The Beer Research Institute Mesa, AZ
+            <br>
+            A Table Saison brewed with simplicity in mind.
+            <br>
+            4oz Draft - $2.00
+            <br>
+            16oz Draft - $6.00
+            <br>
+            32oz Crwl - $10.00
+            <br>
+            64oz Grwl - $18.00
+        </div>
+        <br>
+
+        <div class="row" style="padding:0px 0px 0px 20px">
+            <p style="font-weight:bold; font-family: 'Fredericka the Great', cursive; color:#39f733; font-size: 25px">
+                    11. Peach Lolli</p>
+        </div>
+        <div class="row" style="padding:0px 0px 0px 20px">
+                Belgian Strong Golden Ale
+            <br>
+            9.5% ABV 27 IBU The Beer Research Institute Mesa, AZ
+            <br>
+            Our Belgian Blonde aged on Fresh, Local Peaches!
+            <br>
+            4oz Draft - $2.75
+            <br>
+            12oz Draft - $7.00
+        </div>
+        <br>
+
+        <div class="row" style="padding:0px 0px 0px 20px">
+                <p style="font-weight:bold; font-family: 'Fredericka the Great', cursive; color:#39f733; font-size: 25px">
+                12. Boom Box (Triple Berry)</p>
+            </div>
+            <div class="row" style="padding:0px 0px 0px 20px">
+                    Sour - Fruited
+                <br>
+                4.2% ABV 22 IBU The Beer Research Institute Mesa, AZ
+                <br>
+                Kettle Sour with Blackberry, Blueberry and Raspberry. This Juice Bomb has 2# of fruit per gallon of beer.
+                <br>
+                4oz Draft - $2.50
+                <br>
+                12oz Draft - $6.50
+                <br>
+                32oz Crwl - $15.00
+                <br>
+                64oz Grwl - $26.00
+            </div>
+            <br>
+
+            <div class="row" style="padding:0px 0px 0px 20px">
+                    <p style="font-weight:bold; font-family: 'Fredericka the Great', cursive; color:#39f733; font-size: 25px">
+                            13. Gose For the Kill</p>
+                </div>
+                <div class="row" style="padding:0px 0px 0px 20px">
+                        Sour - Gose
+                    <br>
+                    5.2% ABV 14 IBU The Beer Research Institute Mesa, AZ
+                    <br>
+                    Traditional German Gose brewed with Pink Himalayan salt and Ruby Star Grapefruit.
+                    <br>
+                    4oz Draft - $2.50
+                    <br>
+                    12oz Draft - $6.50
+                    <br>
+                    32oz Crwl - $15.00
+                    <br>
+                    64oz Grwl - $26.00
+                </div>
+                <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <div class="row">
+             
+            <br>
+            
+            
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

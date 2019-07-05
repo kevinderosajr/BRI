@@ -10,8 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css?family=Cuprum|Fredericka+the+Great|Major+Mono+Display|Spinnaker|Bungee|Bungee+Shade|Gravitas+One|Lobster|Ubuntu|Sunflower:300&display=swap"
         rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase.js"></script>
 
 
     <style>
@@ -38,6 +38,7 @@
         <div id="navbar">
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
+            <a href="beerList.html">Beer List</a>
             <a href="about.html">About</a>
             <a href="" style="float:right; font-family: 'Fredericka the Great', cursive;" id="bri">The Beer Research
                 Institute</a>
@@ -86,9 +87,9 @@
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
-                        <div class="beerListImage" style="align-content:center" data-aos="slide-up">
-                            <img src="assets/images/cheers.jpg" alt="">
-                            <p id="menuLabel">BEER LIST</p>
+                        <div class="beerListImage" style="align-content:center" data-aos="zoom-in">
+                            <img src="assets/images/cheers.jpg" alt=""><a href="beerList.html">
+                            <p id="menuLabel">BEER LIST</p></a>
                         </div>
                     </div>
                     <div class="col-md-1"></div>
@@ -109,6 +110,8 @@
 
                 <div style="height:2px; background-color:white"></div>
                 <br>
+            </div>
+            <div class="container">
                 <div class="row">
                     <div class="col-md-1"></div>
 
@@ -118,94 +121,103 @@
                     </div>
                     <div class="col-md-1"></div>
                 </div>
-                <div class="container" id="aboutContainer">
-                    <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-4">
-                            <p id="blurb">beer /bir/
-                                noun: beer; plural noun: beers
-                                an alcoholic drink made from yeast-fermented malt flavored with hops.
-                                "a pint of beer"</p>
-                            <p id="blurb"> That may be the definition, but it means so much more to us. Check out our
-                                story to find out why.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="ownerImage" style="align-content:center">
-                                <img src="assets/images/ownersCheers.jpeg" alt="">
-
-                            </div>
-                        </div>
-                        <div class="col-md-2"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-4">
-                            <p id="aboutLabel">OUR STORY</p>
-                        </div>
-                        <div class="col-md-4"></div>
-
-                    </div>
-                </div>
-
             </div>
 
+            <div class="container" id="aboutContainer">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <p id="blurb" style="color: #39f733; padding:5px">
+                            beer /bir/
+                            noun: beer; <br>
+                            An alcoholic drink made from yeast-fermented malt flavored with hops.
+                            "a pint of beer"</p>
+                        <p id="blurb"> That may be the definition, but it means so much more to us. Check out our
+                            story to find out why.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="ownerImage" style="align-content:center; padding:5px;">
+                            <img src="assets/images/ownersCheers.jpeg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
             <br>
 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10"><a href="about.html">
+                        <p id="aboutLabel">OUR STORY</p>
+                    </a>
+                    </div>
+                    <div class="col-md-1"></div>
+
+                </div>
+                <br>
+                <div style="height:2px; background-color:white"></div>
+                <br>
+            </div>
+
+        
             <div class="container">
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
-                        <h3 id="holyCow">HOLY COW!</h3>
+                        <h3 id="moodFood">In the mood for food?</h3>
                     </div>
                     <div class="col-md-1"></div>
                 </div>
+            </div>
 
+            <div class="container" id="menuImage"  data-aos="zoom-in">
                 <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8"><img src="assets/images/burgerCloseup.jpg" alt="">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10"><img src="assets/images/microPubFood.jpg" alt="">
                     </div>
-                    <div class="col-md-2"></div>
+                    <div class="col-md-1"></div>
                 </div>
+            </div>
 
+            <div class="container">
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-8">
-                        <p id="menuBlurb">Literally. Check out our menu for the full list of our mouth-watering
-                            steakburgers
-                            and more.</p>
-                        <div class="col-md-2"></div>
+                        <p id="menuBlurb">Great beer AND great food?  We're no one trick pony.  Head over to our Menu page to find the list of our tasty pub fare.</p>
                     </div>
+                    <div class="col-md-2"></div>
                 </div>
-                <div class="row">
+                <div class="row" style="padding:15px 0px 0px 0px">
                     <div class="col-md-4"></div>
 
                     <div class="col-md-4"> <a href="menu.html">
-                            <p id="menu" style="color:#39f733">MENU</p>
+                            <p id="foodLabel">MENU</p>
                         </a>
                     </div>
                     <div class="col-md-4"></div>
                 </div>
-
+                <br>
+                <div style="height:2px; background-color:white"></div>
+                <br>
             </div>
 
 
 
-            <br>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2"></div>
+                    <div class="col-md-1"></div>
                     <a class="anchor" name="locations"></a>
-                    <div class="col-md-8">
+                    <div class="col-md-10">
                         <h3 id="stay">Come for the beer, stay for the memories.</h3>
                     </div>
-                    <div class="col-md-2"></div>
+                    <div class="col-md-1"></div>
                 </div>
                 <div class="row">
                     <div class="col-md-2"></div>
-                    <div class="col-md-4">
-                        <img src="assets/images/briLogo.png" alt="" height="200px" width="200px">
+                    <div class="col-md-4" id="happyHourImg">
+                        <img src="assets/images/briHappyHour.png" alt="" height="200px" width="200px">
                     </div>
                     <div class="col-md-4" style="padding:20px 0px 0px 0px">
                         <div class="map-responsive">
@@ -218,8 +230,6 @@
 
                 </div>
 
-                <br>
-
             </div>
 
             <br>
@@ -229,20 +239,19 @@
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-10">
-                            <p id="dealsBlurb" style=" color: white">Like smoking deals as much as smoked cheddar?
-                                Sign up for our email list and we'll send some
-                                right to your inbox. Well...deals that is - we can't send cheese through email. </p>
+                            <p id="dealsBlurb" style=" color: white">Stay up to date on our great beer options and get notified of our weekly food specials!</p>
                         </div>
                         <div class="col-md-1"></div>
                     </div>
-                    <div class="row">
+                    <div class="row" id="emailSignup">
                         <div class="col-md-4"></div>
                         <div class="col-md-4">
                             <input type="text" name="nameBox" placeholder="Name" id="name">
                             <input type="text" name="emailBox" placeholder="Email Address" id="email">
                             <div class="row" style="padding: 4px">
                                 <div class="col-md-2"></div>
-                                <div class="col-md-8"><button style="color: black" id="addEmail">GET DEALS!!!</button></div>
+                                <div class="col-md-8"><button style="color: black" id="addEmail">GET DEALS!!!</button>
+                                </div>
                                 <div class="col-md-2"></div>
                             </div>
                         </div>
@@ -251,6 +260,7 @@
                 </footer>
             </div>
         </div>
+    </div>
     </div>
     <script src="main.js"></script>
 

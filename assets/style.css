@@ -131,14 +131,18 @@ body {
 #menuContainer{
 position: relative;
   text-align: center;
-  
 }
+#menuImage{
+  position: relative;
+    text-align: center;  
+  }
 
 #aboutContainer{
     position: relative;
-      text-align: center;
-      
+      text-align: center;  
     }
+  
+
 
 #menuLabel{
 position: absolute;
@@ -159,6 +163,25 @@ position: absolute;
   color: #39f733;
 }
 
+#foodLabel{
+  position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 50px;
+    color: white;
+  }
+  
+  #foodLabel:hover{
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 70px;
+    color: #39f733;
+  }
+
 #aboutLabel{
     position: absolute;
       top: 90%;
@@ -174,7 +197,7 @@ position: absolute;
       left: 50%;
       transform: translate(-50%, -50%);
       font-family: 'Fredericka the Great', cursive;
-      font-size: 70px;
+      font-size: 60px;
       color: #39f733;
     }
 
@@ -188,7 +211,7 @@ position: absolute;
 }
 #stay{
   /* color: #25274D; */
-  color: white;
+  color: #39f733;
     font-size: 40px;
     text-align: center;
     font-family: 'Fredericka the Great', cursive;
@@ -216,8 +239,8 @@ position: absolute;
   color: white;
 }
 
-#holyCow{
-  color: white;
+#moodFood{
+  color: #39f733;
   font-size: 50px;
   text-align: center;
   /* font-family: 'Lobster', cursive; */
